@@ -48,7 +48,7 @@ img.logo-bg
 	position: absolute;
 	max-width: 78.5rem;
 	width: 120%;
-	transform: translateY(calc(var(--scroll) * 0.7px));
+	transform: translateY(calc(var(--scroll) * 0.65px));
 	z-index: -10;
 }
 
