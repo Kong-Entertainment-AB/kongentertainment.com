@@ -4,12 +4,12 @@
 		<link rel="stylesheet" href="styles.css">
 		<title>Kong Invest</title>
 		<link rel="icon" type="image/x-icon" href="res/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<div class="logo-container">
 			<img class="logo-bg" src="res/kong-bg-transparent.png">
 			<img class="logo" src="res/kong_logo_blue.png">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
 		</div>
 		<h2 class="slogan">Innovating iGaming for the <span style="color: rgb(93, 177, 255);">Future</span></h2>
 		<main>
@@ -73,5 +73,11 @@
 		<img class="footer-logo" src="res/kong_logo_blue.png">
 		<footer>Within <b>Kong Invest AB</b>, you’ll find the creative minds behind <b>Reelsoft AB</b> and <b>Million Games AB</b>.<br><br><br><span class="footer-small">© 2024 Kong Invest AB | Prinsgatan 1, 541 31 Skövde, Sweden | Business Registration #556791-5599</span></footer>
 		<div class="radial"></div>
+		<script>
+			window.addEventListener("scroll", e => 
+			{
+				document.documentElement.style.setProperty("--scroll", window.pageYOffset);
+			});
+		</script>
 	</body>
 </html>
