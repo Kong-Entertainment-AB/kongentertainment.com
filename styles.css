@@ -18,6 +18,10 @@ body {
 	font-family: Montserrat, Helvetica, sans-serif;
 }
 
+.container {
+	overflow-x: hidden !important;
+}
+
 .logo-container {
 	width: 100vw;
 	height: 15rem;
