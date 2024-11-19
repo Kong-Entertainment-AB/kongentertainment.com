@@ -1,35 +1,25 @@
-:root
-{
-	--scroll: 0;
-}
-
-@font-face 
-{
+@font-face {
 	font-family: Montserrat;
 	src: url("res/Montserrat-VariableFont_wght.ttf");
 }
 
-html 
-{
-	scroll-behavior: smooth !important;
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
-body 
-{
+body {
 	position: relative;
 	margin: 0;
 	background: #061124 radial-gradient(circle 100vw at top, rgba(7, 78, 175, 0.2) 0%, rgba(6, 17, 36, 0));
-	/* background-image: url("res/Instructions.png"); */
 	background-size: contain;
 	max-width: 100vw;
-	font-family: Montserrat, Helvetica, sans-serif !important;
-	color: white !important;
-	overflow-x: hidden !important;
+	color: white;
+	font-family: Montserrat, Helvetica, sans-serif;
 }
 
-.logo-container
-{
-	width: 100%;
+.logo-container {
+	width: 100vw;
 	height: 15rem;
 	margin-top: 6.9rem;
 	display: flex;
@@ -37,48 +27,40 @@ body
 	justify-content: center;
 }
 
-img.logo
-{
+img.logo {
 	max-width: 31.75rem;
 	width: 80%;
 }
 
-img.logo-bg
-{
+img.logo-bg {
 	position: absolute;
 	max-width: 78.5rem;
 	width: 120%;
-	transform: translateY(calc(var(--scroll) * 0.65px));
 	z-index: -10;
 }
 
-.slogan
-{
-	margin-top: 2.2rem;
+.slogan {
+	margin: 2.2rem 0 1.3rem;
 	font-weight: 800;
 	width: 100%;
 	text-align: center;
 	font-size: 2.3rem;
 	color: white;
-	margin-bottom: 1.3rem;
 }
 
-main 
-{
+main {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	background: linear-gradient(rgba(4, 10, 22, 0) 0%, rgba(4, 10, 22, 1) 40%, rgba(4, 10, 22, 1) 60%, rgba(4, 10, 22, 0));
 }
 
-.main-wrapper
-{
+.main-wrapper {
 	max-width: 58rem;
 	width: 85%;
 }
 
-.sub-header
-{
+.sub-header {
 	color: white;
 	text-align: center;
 	font-size: 1.17rem;
@@ -86,16 +68,13 @@ main
 	margin-bottom: 2.97rem;
 }
 
-a
-{
-	text-decoration: none !important;
+a {
+	text-decoration: none;
 }
 
-.discover 
-{
+.discover {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 7.15rem;
 	max-width: 21.2rem;
 	width: 90%;
 	height: 6.3rem;
@@ -107,52 +86,41 @@ a
 	color: white;
 	border-radius: 0.5rem;
 	cursor: pointer;
-	margin-bottom: 7.15rem;
 }
 
-.information
-{
+.information {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	width: 70%;
 }
 
-h3 
-{
-	margin-top: 4rem;
+h3 {
+	margin: 4rem 0 0;
 	font-size: 2.375rem;
-	margin-bottom: 0;
 }
 
-.underline 
-{
+.underline {
 	width: 4.5rem;
 	height: 0.375rem;
 	background-color: #0957c3;
 }
 
-.section-text
-{
+.section-text {
 	margin-top: 1rem;
 	font-size: 1.2rem;
 	line-height: 2.05rem;
 }
 
-.partners
-{
+.partners {
 	margin-top: 1.9rem;
 	max-width: 62rem;
 	width: 90%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
 }
 
-.partner 
-{
+.partner {
 	background-color: #020812;
 	width: calc(100% - 5.5rem);
 	height: 17rem;
@@ -163,120 +131,90 @@ h3
 	margin-bottom: 1.5rem;
 }
 
-img.partner-logo
-{
-	/* background-color: red; */
+img.partner-logo {
 	width: 10.5rem;
 	height: 100%;
 	object-fit: contain;
 	padding: 0 0.5rem;
 }
 
-.partner-text
-{
+.partner-text {
 	padding-left: 2.85rem;
-	display: block;
-	margin-top: auto;
-	margin-bottom: auto;
-	/* background-color: red; */
+	margin: auto 0;
 }
 
-.partner-name
-{
+.partner-name {
 	font-size: 2.3rem;
-	margin-top: -0.75rem;
-	margin-bottom: 0;
+	margin: -0.75rem 0 0;
 }
 
-.partner-information
-{
-	margin-top: 0.35rem;
-	margin-bottom: 0;
-	line-height: 2rem;
+.partner-information {
+	margin: 0.35rem 0 0;
 	font-size: 1.25rem;
+	line-height: 2rem;
 }
 
-.footer-logo
-{
+.footer-logo {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 3.5rem;
+	margin: 3.5rem auto;
 	width: 15rem;
 }
 
-footer 
-{
-	margin-top: 3.5rem;
+footer {
+	margin: 3.5rem auto 10rem;
 	width: 90%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	font-size: 0.9rem;
-	margin-bottom: 10rem;
 }
 
-.footer-small
-{
+.footer-small {
 	font-size: 0.65rem;
 }
 
-.radial 
-{
+.radial {
 	z-index: -1;
 	position: absolute;
 	width: 100vw;
 	height: 100vw;
 	bottom: -10rem;
 	right: 0;
-	background: radial-gradient(circle 100vw at bottom right, rgba(7, 78, 175, 0.2) 0%, rgba(6, 17, 36, 0))
+	background: radial-gradient(circle 100vw at bottom right, rgba(7, 78, 175, 0.2) 0%, rgba(6, 17, 36, 0));
 }
 
-@media only screen and (max-width: 1050px)
-{
-	.partner
-	{
+/* Responsive Styles */
+@media only screen and (max-width: 1050px) {
+	.partner {
 		height: 20rem;
 	}
 }
 
-@media only screen and (max-width: 900px)
-{
-	.partner 
-	{
+@media only screen and (max-width: 900px) {
+	.partner {
 		width: calc(100% - 2rem);
 		display: block;
 		height: auto;
 		padding: 2.5rem 1rem;
 	}
 
-	.partner-logo
-	{
+	.partner-logo {
 		width: auto;
 		max-width: 100%;
-		height: 5rem !important;
+		height: 5rem;
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 1.75rem;
+		margin: 0 auto 1.75rem;
 	}
 
-	.partner-text
-	{
+	.partner-text {
 		padding: 1rem;
 	}
 
-	.partner-information
-	{
+	.partner-information {
 		font-size: 1.25rem;
 	}
 }
 
-@media only screen and (max-width: 700px)
-{
-	.information
-	{
+@media only screen and (max-width: 700px) {
+	.information {
 		width: 90%;
 	}
 }
