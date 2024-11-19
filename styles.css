@@ -9,7 +9,6 @@ html {
 }
 
 body {
-	position: relative;
 	margin: 0;
 	background: #061124 radial-gradient(circle 100vw at top, rgba(7, 78, 175, 0.2) 0%, rgba(6, 17, 36, 0));
 	background-size: contain;
@@ -19,6 +18,8 @@ body {
 }
 
 .container {
+	position: relative;
+	height: 100vh;
 	overflow-x: hidden !important;
 }
 
