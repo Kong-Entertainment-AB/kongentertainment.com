@@ -227,3 +227,14 @@ footer {
 		width: 90%;
 	}
 }
+
+.footerLink {
+	color: inherit !important;
+	font-weight: bold !important;
+	text-decoration: none;
+}
+
+.footerLink:hover
+{
+	text-decoration: underline;
+}
